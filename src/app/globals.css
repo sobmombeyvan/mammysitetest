@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-cream: #F5F1E9;
+    --color-cream-light: #FAF7F2;
+    --color-cream-dark: #EBE5D9;
+    --color-navy: #1A242F;
+    --color-gold: #C5A059;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-navy);
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .gold-underline {
+    @apply mx-auto mt-3 h-[3px] w-14 rounded-full;
+    background-color: var(--color-gold);
+  }
+
+  .btn-navy {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white transition;
+    background-color: var(--color-navy);
+  }
+
+  .btn-navy:hover {
+    background-color: #2A3544;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white transition;
+    background-color: var(--color-gold);
+  }
+
+  .btn-gold:hover {
+    background-color: #A8863F;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 bg-white px-10 py-3.5 text-xs font-bold uppercase tracking-wider transition;
+    border-color: var(--color-navy);
+    color: var(--color-navy);
+  }
+
+  .btn-outline:hover {
+    background-color: var(--color-navy);
+    color: white;
+  }
+
+  .section-cream {
+    background-color: var(--color-cream);
+  }
+
+  .section-white {
+    @apply bg-white;
+  }
+}
+
+@keyframes nav-progress {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+
+.nav-progress {
+  animation: nav-progress 0.7s ease-in-out infinite;
+}
