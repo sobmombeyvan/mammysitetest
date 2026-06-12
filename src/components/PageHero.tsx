@@ -1,6 +1,7 @@
 import { Phone, UserRound } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { contactPhones } from "@/lib/data";
 import { trustFeatures } from "@/lib/data";
 import Icon from "./Icon";
 
@@ -43,7 +44,7 @@ export default function PageHero({
               {description}
             </p>
             <div className="flex flex-wrap gap-3">
-              <a href="tel:+237600000000" className="btn-navy">
+              <a href={`tel:${contactPhones[0].tel}`} className="btn-navy">
                 <Phone className="h-4 w-4" />
                 NOUS APPELER
               </a>

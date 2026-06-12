@@ -1,6 +1,7 @@
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Clock, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 import { contactInfo, footerServices, hours, navLinks, socialLinks } from "@/lib/data";
+import ContactPhones from "./ContactPhones";
 import Logo from "./Logo";
 
 export default function Footer() {
@@ -66,10 +67,7 @@ export default function Footer() {
               Nous contacter
             </h3>
             <ul className="space-y-3">
-              <li className="flex items-center gap-3 text-sm text-white/70">
-                <Phone className="h-4 w-4 shrink-0 text-gold" />
-                {contactInfo.phone}
-              </li>
+              <ContactPhones className="text-sm text-white/70" linkClassName="transition hover:text-gold" />
               <li className="flex items-center gap-3 text-sm text-white/70">
                 <Mail className="h-4 w-4 shrink-0 text-gold" />
                 {contactInfo.email}

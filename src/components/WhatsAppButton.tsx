@@ -1,7 +1,10 @@
+import { contactInfo } from "@/lib/data";
+
 export default function WhatsAppButton() {
+  const whatsapp = contactInfo.whatsapp.replace("+", "");
   return (
     <a
-      href="https://wa.me/237600000000"
+      href={`https://wa.me/${whatsapp}`}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="WhatsApp"

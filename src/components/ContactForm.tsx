@@ -4,7 +4,8 @@ import { Send } from "lucide-react";
 import { useState } from "react";
 import { contactInfo, hours } from "@/lib/data";
 import { serviceOptions } from "@/lib/contact-data";
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import ContactPhones from "./ContactPhones";
+import { Clock, Mail, MapPin } from "lucide-react";
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false);
@@ -51,7 +52,7 @@ export default function ContactForm() {
                       required
                       type="tel"
                       className="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none focus:border-gold"
-                      placeholder="+237 6XX XXX XXX"
+                      placeholder="+237 6 41 71 75 86"
                     />
                   </div>
                 </div>
@@ -109,10 +110,7 @@ export default function ContactForm() {
             <div className="rounded-2xl bg-navy p-8 text-white">
               <h3 className="mb-6 text-lg font-extrabold uppercase">Contactez-nous</h3>
               <ul className="space-y-5">
-                <li className="flex items-start gap-3 text-sm text-white/85">
-                  <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                  {contactInfo.phone}
-                </li>
+                <ContactPhones />
                 <li className="flex items-start gap-3 text-sm text-white/85">
                   <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
                   {contactInfo.email}

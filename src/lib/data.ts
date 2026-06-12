@@ -127,11 +127,24 @@ export const stats = [
   { value: "95%", label: "De satisfaction clients", icon: "smile" },
 ];
 
+export const contactPhones = [
+  {
+    network: "Orange",
+    display: "+237 6 41 71 75 86",
+    tel: "+237641717586",
+  },
+  {
+    network: "MTN",
+    display: "+237 6 53 33 99 22",
+    tel: "+237653339922",
+  },
+] as const;
+
 export const contactInfo = {
-  phone: "+237 6XX XXX XXX",
   email: "contact@mamyhouseservices.cm",
   address: "Douala, Cameroun",
   tagline: "La confiance, notre priorité. Votre tranquillité, notre mission.",
+  whatsapp: "+237641717586",
 };
 
 export const hours = [

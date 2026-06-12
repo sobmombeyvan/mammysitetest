@@ -1,6 +1,6 @@
 import { Phone, UserRound } from "lucide-react";
 import Image from "next/image";
-import { heroContent, trustFeatures } from "@/lib/data";
+import { contactPhones, heroContent, trustFeatures } from "@/lib/data";
 import Icon from "./Icon";
 
 export default function HeroMobile() {
@@ -23,7 +23,7 @@ export default function HeroMobile() {
               {heroContent.description}
             </p>
             <div className="mb-8 flex flex-wrap gap-3">
-              <a href="tel:+237600000000" className="btn-navy">
+              <a href={`tel:${contactPhones[0].tel}`} className="btn-navy">
                 <Phone className="h-4 w-4" />
                 {heroContent.callLabel}
               </a>
