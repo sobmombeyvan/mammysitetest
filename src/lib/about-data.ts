@@ -4,55 +4,77 @@ export const aboutHero = {
   eyebrow: "À PROPOS DE MA'MY HOUSE",
   title: "Une histoire de",
   titleHighlight: "confiance",
-  titleEnd: "au service des familles et des entreprises.",
-  description:
-    "Ma'My House est une agence spécialisée dans la mise à disposition de personnel domestique et professionnel qualifié au Cameroun. Nous accompagnons les familles, les entreprises et la diaspora avec rigueur et humanité.",
+  titleEnd: "au service des familles, des entreprises et de la diaspora",
+  paragraphs: [
+    "MA'MY HOUSE SERVICES est une entreprise spécialisée dans la sélection, le placement et l'accompagnement de personnel de confiance pour les particuliers et les professionnels.",
+    "Nous accompagnons les familles, les entreprises et la diaspora dans la recherche de professionnels fiables, qualifiés et rigoureusement sélectionnés.",
+  ],
+  missionTitle: "Notre mission est simple :",
+  missionText:
+    "Offrir la tranquillité d'esprit à ceux qui souhaitent confier leur maison, leurs proches ou leur entreprise à des personnes de confiance.",
   image: siteImages.aboutHero,
 };
 
 export const aboutHistory = {
   title: "Notre histoire",
+  intro: "MA'MY HOUSE est née d'un constat simple :",
+  highlight:
+    "Trouver une nounou, une aide ménagère, un gardien ou un personnel de service compétent et fiable ne devrait jamais être un parcours du combattant.",
   paragraphs: [
-    "Ma'My House est née d'un constat simple : trouver du personnel domestique fiable et professionnel ne devrait pas être un parcours du combattant pour les familles camerounaises.",
-    "Fondée à Douala par Gracela Webe, notre agence a pour mission de connecter les foyers et les entreprises à des professionnelles africaines rigoureusement sélectionnées, formées et encadrées.",
+    "Fondée par Gracela Webe, MA'MY HOUSE SERVICES a été créée pour apporter une solution professionnelle, humaine et sécurisée aux besoins des familles et des entreprises camerounaises.",
+    "Aujourd'hui, nous sélectionnons, vérifions, accompagnons et suivons chaque professionnel afin de garantir un service de qualité et une relation de confiance durable.",
   ],
   image: siteImages.aboutFamily,
-  quote:
-    "Notre plus grande fierté est de voir nos clients vaquer à leurs occupations en toute sérénité, sachant que leur maison et leurs proches sont entre de bonnes mains.",
-  author: "Gracela Webe",
-  role: "Fondatrice & CEO",
 };
 
-export const mvv = [
-  {
-    title: "Notre mission",
-    icon: "target",
-    text: "Faciliter le quotidien des familles et des entreprises en leur mettant à disposition des professionnelles africaines fiables, compétentes et respectueuses.",
-  },
-  {
-    title: "Notre vision",
-    icon: "eye",
-    text: "Devenir la référence en matière de services domestiques et professionnels au Cameroun et en Afrique centrale.",
-  },
-  {
-    title: "Nos valeurs",
-    icon: "gem",
-    values: ["Confiance", "Respect", "Excellence", "Professionnalisme", "Humanité"],
-  },
-];
+export const aboutVision = {
+  title: "Notre vision",
+  text: "Devenir la référence africaine des services à domicile et aux entreprises en plaçant l'humain, la confiance et l'excellence au cœur de chaque mission.",
+  icon: "eye",
+};
 
-export const aboutStats = [
-  { value: "+500", label: "Clients satisfaits", icon: "users" },
-  { value: "+200", label: "Professionnels qualifiés", icon: "home" },
-  { value: "5+", label: "Années d'expérience", icon: "clock" },
-  { value: "4+", label: "Villes couvertes", icon: "building-2" },
-];
+export const aboutValues = {
+  title: "Nos valeurs",
+  items: [
+    {
+      title: "Confiance",
+      description: "Chaque professionnel est sélectionné avec rigueur.",
+      icon: "shield-check",
+    },
+    {
+      title: "Qualité",
+      description: "Nous privilégions les compétences, le savoir-être et le professionnalisme.",
+      icon: "gem",
+    },
+    {
+      title: "Sécurité",
+      description: "Nous effectuons des vérifications avant chaque mise en relation.",
+      icon: "shield",
+    },
+    {
+      title: "Accompagnement",
+      description: "Nous restons présents avant, pendant et après le placement.",
+      icon: "heart-handshake",
+    },
+  ],
+};
 
-export const aboutEngagement = {
-  eyebrow: "NOTRE ENGAGEMENT",
-  title: "Votre satisfaction est notre plus grande fierté.",
-  description:
-    "Chaque mise en relation est suivie de près par notre équipe. Nous garantissons un service personnalisé, une écoute attentive et un remplacement rapide en cas de besoin.",
-  cta: "DÉCOUVRIR NOS SERVICES",
+export const aboutAudiences = {
+  title: "Qui accompagnons-nous ?",
+  items: [
+    { emoji: "🏡", label: "Familles" },
+    { emoji: "👶", label: "Nounous & garde d'enfants" },
+    { emoji: "🧹", label: "Femmes de ménage" },
+    { emoji: "👵", label: "Aide aux personnes âgées" },
+    { emoji: "🚗", label: "Chauffeurs privés" },
+    { emoji: "🛡️", label: "Gardiens & vigiles" },
+    { emoji: "🏨", label: "Personnel hôtelier" },
+  ],
+  extras: [
+    "Entreprises, hôtels, restaurants et résidences",
+    "Diaspora souhaitant prendre soin de leurs proches au Cameroun.",
+  ],
+  closingBrand: "MA'MY HOUSE SERVICES",
+  closingTagline: "Nous prenons soin de ce qui compte le plus.",
   image: siteImages.aboutTeam,
 };
