@@ -9,12 +9,12 @@ type DiasporaProps = {
 
 function DiasporaVisual() {
   return (
-    <div className="relative flex h-full min-h-[220px] items-center justify-center overflow-hidden rounded-xl lg:min-h-[280px]">
+    <div className="relative flex h-full min-h-[220px] items-center justify-center overflow-hidden rounded-xl bg-navy lg:min-h-[280px]">
       <Image
         src={diasporaContent.image}
         alt="Service diaspora Ma'My House"
         fill
-        className="object-cover"
+        className="object-contain object-center p-2"
         sizes="(max-width: 1024px) 100vw, 40vw"
       />
       <div className="absolute inset-0 bg-navy/35" />

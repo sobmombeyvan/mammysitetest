@@ -55,12 +55,12 @@ export default function PageHero({
             </div>
           </div>
 
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-[0_8px_32px_rgba(26,36,47,0.15)] lg:aspect-[5/4]">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-cream-dark shadow-[0_8px_32px_rgba(26,36,47,0.15)] lg:aspect-[5/4]">
             <Image
               src={image}
               alt={imageAlt}
               fill
-              className="object-cover object-center"
+              className="object-contain object-center p-1"
               priority={priority}
               sizes="(max-width: 1024px) 100vw, 50vw"
             />

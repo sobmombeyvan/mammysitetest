@@ -11,7 +11,7 @@ export const siteImages = {
   aboutFamily: "/images/housekeeping.jpg",
   aboutTeam: "/images/security.jpg",
   services: "/images/chambermaid.jpg",
-  contact: "/images/driver.jpg",
+  contact: "/images/contact.jpg",
   blog: "/images/nanny.jpg",
   diasporaBanner: "/images/diaspora.jpg",
 
