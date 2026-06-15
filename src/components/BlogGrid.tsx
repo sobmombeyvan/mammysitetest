@@ -2,6 +2,7 @@ import { ArrowRight, Clock } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { blogPosts } from "@/lib/blog-data";
+import { defaultImageClass } from "@/lib/images";
 
 export default function BlogGrid() {
   return (
@@ -18,7 +19,7 @@ export default function BlogGrid() {
                   src={post.image}
                   alt={post.title}
                   fill
-                  className="object-contain object-center p-2"
+                  className={post.imageClassName ?? defaultImageClass}
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <span className="absolute left-4 top-4 rounded-full bg-gold px-3 py-1 text-[10px] font-bold uppercase text-white">

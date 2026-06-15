@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { aboutAudiences } from "@/lib/about-data";
+import { landscapeCropTopClass } from "@/lib/images";
 
 export default function AboutAudiences() {
   return (
@@ -45,7 +46,7 @@ export default function AboutAudiences() {
               src={aboutAudiences.image}
               alt="Clients accompagnés par Ma'My House Services"
               fill
-              className="object-contain object-center p-2"
+              className={landscapeCropTopClass}
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>

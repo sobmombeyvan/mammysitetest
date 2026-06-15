@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { services } from "@/lib/data";
+import { defaultImageClass } from "@/lib/images";
 import Icon from "./Icon";
 
 export default function Services() {
@@ -24,7 +25,7 @@ export default function Services() {
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-contain object-center p-2"
+                  className={service.imageClassName ?? defaultImageClass}
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute -bottom-5 left-1/2 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full border-[3px] border-white bg-navy text-gold shadow-md">
