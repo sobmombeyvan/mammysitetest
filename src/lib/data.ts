@@ -1,4 +1,4 @@
-import { landscapeCropTopClass, siteImages } from "./images";
+import { siteImages } from "./images";
 
 export const navLinks = [
   { label: "ACCUEIL", href: "/" },
@@ -71,7 +71,6 @@ export const services = [
     description:
       "La sécurité de votre domicile ou de vos locaux, jour et nuit, entre de bonnes mains.",
     image: siteImages.security,
-    imageClassName: landscapeCropTopClass,
     icon: "shield",
   },
   {

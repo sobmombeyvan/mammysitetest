@@ -1,6 +1,5 @@
 /** Images locales Ma'My House */
 export const defaultImageClass = "object-contain object-center p-2";
-export const landscapeCropTopClass = "object-cover object-top";
 
 const heroMain = "/images/hero-main.jpg";
 const illustration = "/images/illustration.jpg";

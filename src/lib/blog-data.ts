@@ -1,4 +1,4 @@
-import { landscapeCropTopClass, siteImages } from "./images";
+import { siteImages } from "./images";
 
 export const blogHero = {
   eyebrow: "BLOG",
@@ -69,7 +69,6 @@ export const blogPosts = [
     date: "8 avril 2026",
     category: "Maison",
     image: siteImages.security,
-    imageClassName: landscapeCropTopClass,
     readTime: "3 min",
   },
 ];
