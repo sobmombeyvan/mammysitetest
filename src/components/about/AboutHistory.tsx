@@ -6,12 +6,12 @@ export default function AboutHistory() {
     <section className="bg-white py-14 md:py-20">
       <div className="section-container">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg lg:aspect-auto lg:min-h-[380px]">
+          <div className="relative min-w-0 aspect-[4/3] overflow-hidden rounded-2xl bg-cream-dark shadow-lg lg:aspect-auto lg:min-h-[380px]">
             <Image
               src={aboutHistory.image}
               alt="Notre histoire"
               fill
-              className="object-cover"
+              className="object-contain object-center p-2"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>

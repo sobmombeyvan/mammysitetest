@@ -29,12 +29,12 @@ export default function AboutPageHero() {
               </p>
             </div>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-[0_8px_32px_rgba(0,26,51,0.12)]">
+          <div className="relative min-w-0 aspect-[4/3] overflow-hidden rounded-2xl bg-cream-dark shadow-[0_8px_32px_rgba(0,26,51,0.12)]">
             <Image
               src={aboutHero.image}
               alt="Équipe Ma'My House"
               fill
-              className="object-cover"
+              className="object-contain object-center p-2"
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
             />

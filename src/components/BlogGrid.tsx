@@ -13,12 +13,12 @@ export default function BlogGrid() {
               key={post.slug}
               className="group overflow-hidden rounded-lg border border-gray-100 bg-white shadow-[0_2px_12px_rgba(0,26,51,0.06)] transition hover:shadow-lg"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 overflow-hidden bg-cream-dark">
                 <Image
                   src={post.image}
                   alt={post.title}
                   fill
-                  className="object-cover transition duration-300 group-hover:scale-105"
+                  className="object-contain object-center p-2"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <span className="absolute left-4 top-4 rounded-full bg-gold px-3 py-1 text-[10px] font-bold uppercase text-white">

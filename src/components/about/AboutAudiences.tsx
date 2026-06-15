@@ -40,12 +40,12 @@ export default function AboutAudiences() {
               </p>
             </div>
           </div>
-          <div className="relative aspect-[16/10] overflow-hidden rounded-2xl shadow-lg">
+          <div className="relative min-w-0 aspect-[16/10] overflow-hidden rounded-2xl bg-cream-dark shadow-lg">
             <Image
               src={aboutAudiences.image}
               alt="Clients accompagnés par Ma'My House Services"
               fill
-              className="object-cover"
+              className="object-contain object-center p-2"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>

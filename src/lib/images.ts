@@ -10,7 +10,7 @@ export const siteImages = {
   aboutHero: illustration,
   aboutFamily: "/images/housekeeping.jpg",
   aboutTeam: "/images/security.jpg",
-  services: "/images/chambermaid.jpg",
+  services: "/images/services-hero.jpg",
   contact: "/images/contact.jpg",
   blog: "/images/nanny.jpg",
   diasporaBanner: "/images/diaspora.jpg",

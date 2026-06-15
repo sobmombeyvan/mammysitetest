@@ -47,13 +47,14 @@ export default function HeroMobile() {
             </div>
           </div>
 
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-cream-dark shadow-xl">
             <Image
               src={heroContent.image}
               alt="Professionnelle Ma'My House avec une famille"
               fill
-              className="object-cover"
+              className="object-contain object-center p-2"
               priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
         </div>

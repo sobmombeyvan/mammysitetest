@@ -36,7 +36,7 @@ export default function InnerPageHero({
             )}
             <p className="text-sm leading-relaxed text-gray-600">{description}</p>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-cream-dark shadow-lg">
+          <div className="relative min-w-0 aspect-[4/3] overflow-hidden rounded-2xl bg-cream-dark shadow-lg">
             <Image
               src={image}
               alt={imageAlt}

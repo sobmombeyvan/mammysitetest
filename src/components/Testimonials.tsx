@@ -15,7 +15,7 @@ export default function Testimonials() {
         </div>
 
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl bg-cream-dark shadow-lg lg:mx-0 lg:max-w-none">
+          <div className="relative mx-auto min-w-0 aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl bg-cream-dark shadow-lg lg:mx-0 lg:max-w-none">
             <Image
               src={siteImages.testimonial}
               alt="Cliente satisfaite"
