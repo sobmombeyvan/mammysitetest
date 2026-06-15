@@ -141,7 +141,7 @@ export const contactPhones = [
 ] as const;
 
 export const contactInfo = {
-  email: "contact@mamyhouseservices.cm",
+  email: "contact.mamyhouseservice@gmail.com",
   address: "Douala, Cameroun",
   tagline: "La confiance, notre priorité. Votre tranquillité, notre mission.",
   whatsapp: "+237641717586",

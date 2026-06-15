@@ -36,12 +36,12 @@ export default function InnerPageHero({
             )}
             <p className="text-sm leading-relaxed text-gray-600">{description}</p>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-cream-dark shadow-lg">
             <Image
               src={image}
               alt={imageAlt}
               fill
-              className="object-cover"
+              className="object-contain object-center p-2"
               sizes="(max-width: 1024px) 100vw, 50vw"
               loading="eager"
             />

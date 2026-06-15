@@ -19,12 +19,12 @@ export default function Services() {
               key={service.title}
               className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-[0_2px_12px_rgba(0,26,51,0.06)]"
             >
-              <div className="relative h-44 overflow-hidden">
+              <div className="relative h-52 overflow-hidden bg-cream-dark">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover"
+                  className="object-contain object-center p-2"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute -bottom-5 left-1/2 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full border-[3px] border-white bg-navy text-gold shadow-md">
