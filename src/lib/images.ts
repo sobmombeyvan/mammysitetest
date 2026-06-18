@@ -1,6 +1,10 @@
 /** Images locales Ma'My House */
 export const defaultImageClass = "object-contain object-center p-2";
 
+export type WithOptionalImageClass = {
+  imageClassName?: string;
+};
+
 const heroMain = "/images/hero-main.jpg";
 const illustration = "/images/illustration.jpg";
 const logo = "/images/logo.jpg";

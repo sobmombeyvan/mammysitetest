@@ -1,4 +1,11 @@
-import { siteImages } from "./images";
+import { siteImages, type WithOptionalImageClass } from "./images";
+
+type Service = WithOptionalImageClass & {
+  title: string;
+  description: string;
+  image: string;
+  icon: string;
+};
 
 export const navLinks = [
   { label: "ACCUEIL", href: "/" },
@@ -37,7 +44,7 @@ export const heroContent = {
   image: siteImages.hero,
 };
 
-export const services = [
+export const services: Service[] = [
   {
     title: "Femme de ménage",
     description:

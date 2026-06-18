@@ -1,4 +1,14 @@
-import { siteImages } from "./images";
+import { siteImages, type WithOptionalImageClass } from "./images";
+
+export type BlogPost = WithOptionalImageClass & {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  category: string;
+  image: string;
+  readTime: string;
+};
 
 export const blogHero = {
   eyebrow: "BLOG",
@@ -10,7 +20,7 @@ export const blogHero = {
   image: siteImages.blog,
 };
 
-export const blogPosts = [
+export const blogPosts: BlogPost[] = [
   {
     slug: "choisir-femme-de-menage",
     title: "Comment choisir une femme de ménage de confiance ?",
